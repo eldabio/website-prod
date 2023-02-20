@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Elda Bio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="child">
+                <img src="eldalogo.png" alt="Logo of Elda Bio" width="253" height="100">
+            </div>
+            <div class="child">
+                <h1>Detect, track, and treat melanoma earlier.</h1>
+            </div>
+            <div class="child">
+                <div class="emailParent">
+                    <form class="emailParent" id="form">
+                        <input class="emailInput" id="email" type="email" name="Email" placeholder="enter your email to keep up">
+                        <input class="submitButton" id='submit' type="submit" value="submit">
+                    </form>
+                </div>
+            </div>
+            <div class="child">
+                <h2>We're coming soon. Want to learn more? Email us at hello@elda.bio.</h2>
+            </div>
+        </div>
+    </body>
+    <script>
+        const form = document.querySelector("#form")
+        const submitButton = document.querySelector("#submit")
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwu7aPaO13FSlrLIogRbEyfyyRm6M5ZfweMr6TeMEFuGAN1EXZtyTeND77u9AGudLK7uA/exec'
+     
+        form.addEventListener('submit', e => {
+          submitButton.disabled = true
+          e.preventDefault()
+          let requestBody = new FormData(form)
+          fetch(scriptURL, { method: 'POST', body: requestBody})
+            .then(response => {
+               alert('Thanks for your submission!')
+               submitButton.disabled = false
+              })
+            .catch(error => {
+              submitButton.disabled = false
+     
+            }
+            )
+        })
+     </script>     
+</html>
