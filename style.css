@@ -71,6 +71,23 @@ textarea {
     border-radius: 12px;
 }
 
+.emailParentSuccess {
+    width:fit-content;
+    height:fit-content;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    border: none;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 1.25px;
+    padding-bottom: 1.25px;
+    background-color: #E4E4E4;
+    border-radius: 12px;
+}
+
 .submitButton {
     background-color: #84A6FD;
     border: none;
@@ -83,4 +100,8 @@ textarea {
 .styledLink {
     color: #4A6DC6;
     text-decoration: none;
+}
+
+.success {
+    color: #9CFD84;
 }
