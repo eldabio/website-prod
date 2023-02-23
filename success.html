@@ -6,7 +6,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
     </head>
     <body>
         <div class="container">
@@ -17,15 +16,12 @@
                 <h1>Detect, track, and treat melanoma earlier.</h1>
             </div>
             <div class="child">
-                <div class="emailParent">
-                    <form class="emailParent" id="form">
-                        <input class="emailInput" id="email" type="email" name="Email" placeholder="enter your email to keep up">
-                        <input class="submitButton" id='submit' type="submit" value="submit">
-                    </form>
+                <div class="emailParentSuccess">
+                    <h2>Thanks for your submission! We can't wait to change lives with you.</h2>
                 </div>
             </div>
             <div class="child">
-                <h2>Elda Bio is coming soon. Want to learn more? Email us at <a class="styledLink" href="mailto:hello@elda.bio?subject=Tell me more about Elda Bio">hello@elda.bio.</a></h2>
+                <h2>We're coming soon. Want to learn more? Email us at <a class="styledLink" href="mailto:hello@elda.bio?subject=Tell me more about Elda Bio">hello@elda.bio.</a></h2>
             </div>
         </div>
     </body>
@@ -40,11 +36,11 @@
           let requestBody = new FormData(form)
           fetch(scriptURL, { method: 'POST', body: requestBody})
             .then(response => {
-                window.location.assign("success.html")
-                submitButton.disabled = false
+               alert("Thanks for submitting your email! We're excited to change lives with you.")
+               submitButton.disabled = false
               })
             .catch(error => {
-                submitButton.disabled = false
+              submitButton.disabled = false
      
             }
             )
