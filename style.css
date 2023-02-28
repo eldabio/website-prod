@@ -57,7 +57,7 @@ textarea {
     background-color: #E4E4E4;
 }
 
-@media (min-width: 400px) {
+@media (max-width: 400px) {
     .emailInput {
         width: 200px;
         height: 50px;
