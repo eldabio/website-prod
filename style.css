@@ -70,7 +70,7 @@ textarea {
     .submitButton {
         background-color: #84A6FD;
         border: none;
-        border-radius: 4px;
+        border-radius: 0px;
         margin: 4px;
         padding-left: 8px;
         padding-right: 8px;
