@@ -58,7 +58,27 @@ textarea {
     background-color: #E4E4E4;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 430px) {
+    .emailInput {
+        width: 220px;
+        height: 50px;
+        padding: 0;
+        margin: 0px auto;
+        border: none;
+        background-color: #E4E4E4;
+    }
+
+    .submitButton {
+        background-color: #84A6FD;
+        border: none;
+        border-radius: 0px;
+        margin: 4px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+@media (max-width: 660px) {
     .emailInput {
         width: 220px;
         height: 50px;
