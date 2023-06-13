@@ -90,7 +90,7 @@ textarea {
 }
 
 .submitButton {
-    background-color: #84A6FD;
+    background-color: #A7C0FF;
     border: none;
     border-radius: 8px;
     margin: 4px;
@@ -99,12 +99,12 @@ textarea {
 }
 
 .styledLink {
-    color: #4A6DC6;
+    color: #2461FF;
     text-decoration: none;
 }
 
 .success {
-    color: #9CFD84;
+    color: #A7C0FF;
 }
 @media screen and (max-width: 430px) {
     .emailInput {
@@ -117,7 +117,7 @@ textarea {
     }
 
     .submitButton {
-        background-color: #84A6FD;
+        background-color: #A7C0FF;
         /* background-color: blue; */
         border-radius: 0px !important;
         border: none;
@@ -138,7 +138,7 @@ textarea {
     }
 
     .submitButton {
-        background-color: #84A6FD;
+        background-color: #A7C0FF;
         /* background-color: green; */
         border-radius: 0px;
         border: none;
