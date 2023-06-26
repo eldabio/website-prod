@@ -6,8 +6,25 @@
 	padding: 0 4rem;
 }
 
-.hero img {
+.hero div img {
+	position: absolute;
+}
+
+.hero div img:nth-child(1) {
+	z-index: 1;
+	top: -6rem;
+	left: -7rem;
+}
+
+.hero>div>img:nth-child(2) {
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+	background-color: white;
+	z-index: 2;
+}
+
+
+.hero div {
+	position: relative;
 }
 
 .heroText {

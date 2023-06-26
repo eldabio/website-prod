@@ -42,6 +42,7 @@ function Hero() {
         <CtaButton variant="purple">Start using Elda today</CtaButton>
       </div>
       <div>
+        <img src="/svg/gradient-blur.svg" />
         <img src="/img/home.png" />
       </div>
     </section>
