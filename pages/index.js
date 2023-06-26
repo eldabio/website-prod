@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import CtaButton from "./components/cta-button";
 
 import {
+  ArrowRightIcon,
   CameraIcon,
   ChartBarIcon,
   ClockIcon,
@@ -129,10 +130,18 @@ export default function Home() {
           </div>
         </section>
         <footer className={styles.footer}>
-          elda
+          <h1>elda</h1>
+          <form>
+            <div className={styles.formInput}>
+              <input placeholder="join our email list today" />
+              <button>
+                <ArrowRightIcon />
+              </button>
+            </div>
+          </form>
           <div className={styles.links}>
-            <a href="#">about</a>
-            <a href="#">copyright 2023 elda bio</a>
+            <a>about</a>
+            <a>copyright 2023 elda bio</a>
             <a>privacy policy</a>
             <a>contact us</a>
             <a>work with us</a>

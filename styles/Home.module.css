@@ -98,7 +98,7 @@ section.advantages h1 {
 section.advantages .advantagesGrid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: 5.25rem;
+	gap: 4rem 5rem;
 	padding: 2rem 3.75rem;
 }
 
@@ -116,4 +116,79 @@ section.advantages .advantagesGrid svg {
 	height: 2rem;
 	stroke: #A7C0FF;
 	stroke-width: 2px;
+}
+
+.footer {
+	margin: 1.25rem;
+	border-radius: 1.25rem;
+	background-color: #2461FF;
+	color: #fff;
+	text-align: center;
+	padding: 2rem 12rem;
+}
+
+.footer h1 {
+	font-size: 4rem;
+	margin: 4rem 0 1rem 0;
+}
+
+.footer .formInput {
+	padding: .5rem .75rem;
+	border-radius: .75rem;
+	border: none;
+	background-color: white;
+	width: fit-content;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: auto;
+	outline: none;
+
+	transition: outline 0.2s ease-in-out;
+}
+
+.footer .formInput:focus-within {
+	outline: #c4c4c4 solid .25rem;
+}
+
+.footer input:focus {
+	outline: none;
+}
+
+.footer input {
+	font-size: 1.25rem;
+	font-family: "Aeonik Pro";
+	border: none;
+}
+
+.footer button {
+	background: none;
+	border: none;
+}
+
+.footer button:hover {
+	cursor: pointer;
+}
+
+.footer button svg {
+	stroke: rgba(0, 0, 0, 0.4);
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+.footer .links {
+	margin: 6rem 0 0 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+.footer .links a {
+	color: white;
+	opacity: 0.8;
+	transition: opacity 0.2s ease-in-out;
+}
+
+.footer .links a:hover {
+	opacity: 1;
+	cursor: pointer;
 }
