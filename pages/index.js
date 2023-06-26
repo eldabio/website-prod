@@ -3,6 +3,23 @@ import styles from "../styles/Home.module.css";
 
 import CtaButton from "./components/cta-button";
 
+function ProductCard({ name, heading, description, image, logo, cta }) {
+  return (
+    <div className={styles.productCard}>
+      <h2>
+        <img src={logo} />
+        {name}
+      </h2>
+      <img src={image} />
+      <div>
+        <h3>{heading}</h3>
+        <p>{description}</p>
+        {cta}
+      </div>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <>
@@ -19,21 +36,7 @@ export default function Home() {
               Elda empowers patients, general practitioners, and specialists to
               detect and track dermatological conditions from early stages.
             </p>
-            <CtaButton>
-              Start using Elda today{" "}
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M15.3887 8L7.3887 16L5.10299 13.6877L9.22259 9.701L0 9.72757V6.32558H9.19601L5.10299 2.33887L7.3887 0L15.3887 8Z"
-                  fill="black"
-                />
-              </svg>
-            </CtaButton>
+            <CtaButton variant="purple">Start using Elda today</CtaButton>
           </div>
           <div>
             <img src="/img/home.png" />
@@ -50,6 +53,24 @@ export default function Home() {
         </section>
         <section className={styles.products}>
           <h1>Making dermatology easier, one step at a time</h1>
+          <div className={styles.productList}>
+            <ProductCard
+              name="scan"
+              heading="Detect, track, and treat skin cancer easier than ever before."
+              description="Elda Scan uses artificial intelligence to help you detect melanoma using just your phone with HIPAA compliance built in. Automatically upload results and comments to your favorite EMR software directly from the Scan app."
+              image="/svg/scan-illustration.svg"
+              logo="/svg/scan.svg"
+              cta={<CtaButton variant="purple">Start using Scan</CtaButton>}
+            />
+            <ProductCard
+              name="cosmetics"
+              heading="Take before and after photos in five minutes instead of thirty-five."
+              description="Elda Cosmetics leverages machine learning on your phone to make clinical photography simple, requiring far less time than before. Level up your workflow with integrations for all of the software you already use."
+              image="/svg/cosmetics-illustration.svg"
+              logo="/svg/cosmetics.svg"
+              cta={<CtaButton variant="orange">Download Cosmetics</CtaButton>}
+            />
+          </div>
         </section>
         <section className={styles.advantages}>
           <h1>With advantages for everyone</h1>

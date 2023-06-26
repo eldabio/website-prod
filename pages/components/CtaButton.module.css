@@ -1,7 +1,5 @@
 button.ctaButton {
   padding: .375rem .75rem;
-  background-color: #84A6FD;
-  color: black;
   font-weight: bold;
   border: none;
   border-radius: .75rem;
@@ -11,4 +9,20 @@ button.ctaButton {
   align-items: center;
   line-height: 1;
   gap: 0.625rem;
+
+  transition: background-color, filter 0.2s;
+}
+
+button.purple {
+  background-color: #84A6FD;
+  color: black;
+}
+
+button.orange {
+  background-color: #FFBA7A;
+  color: black;
+}
+
+button.orange:hover {
+  background-color: #f5caa2;
 }
