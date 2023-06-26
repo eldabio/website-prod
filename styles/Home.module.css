@@ -1,5 +1,49 @@
-/* Add styles for the Home component */
-.container {
+/* HERO STYLES */
+.hero {
+	display: flex;
+	max-width: 75rem;
+	margin: 6rem auto;
+	padding: 0 4rem;
+}
+
+.hero img {
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.heroText {
 	padding: 20px;
+	max-width: 27.5rem;
+}
+
+.heroText h1 {
+	font-size: 2.5rem;
+}
+
+.heroText p {
+	font-size: 1.125rem;
+}
+
+
+@media screen and (max-width: 960px) {
+	.hero {
+		flex-direction: column;
+	}
+}
+
+
+.subhero {
+	background-color: #2461FF;
+	color: #fff;
+	padding: 4rem 14rem;
 	text-align: center;
-  }
+}
+
+.subhero h1 {
+	font-size: 3rem;
+	font-weight: 900;
+	margin: 2rem 0;
+}
+
+.subhero p {
+	font-size: 1.25rem;
+}
