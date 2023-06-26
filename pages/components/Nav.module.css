@@ -1,0 +1,36 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.25rem;
+  border-radius: 1rem;
+  border: 1px solid #ccc;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #303030;
+  transition: color 100ms ease-in-out;
+}
+
+.navbar a:hover {
+  color: #000;
+}
+
+.navbarLogo {
+  justify-self: flex-start;
+  -webkit-user-drag: none;
+}
+
+.navbarLinks {
+  display: flex;
+  justify-content: space-between;
+
+  list-style: none;
+  gap: 3rem;
+}
+
+.navbarEnd {
+  justify-self: flex-end;
+}

@@ -1,28 +1,24 @@
-import React from 'react';
-import Link from 'next/link';
-import styles from './Nav.module.css';
+import React from "react";
+import Link from "next/link";
+import styles from "./Nav.module.css";
 
 function Nav() {
   return (
     <nav className={styles.navbar}>
-      <div className={styles.navbarLogo}>My Logo</div>
+      <div className={styles.navbarLogo}>
+        <img src="/svg/logo.svg" />
+      </div>
       <ul className={styles.navbarLinks}>
         <li>
-          <Link href="/">
-            <a>Home</a>
-          </Link>
+          <Link href="/">products</Link>
         </li>
         <li>
-          <Link href="/about">
-            <a>About</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/contact">
-            <a>Contact</a>
-          </Link>
+          <Link href="/about">about</Link>
         </li>
       </ul>
+      <div className={styles.navbarEnd}>
+        <Link href="/">connect</Link>
+      </div>
     </nav>
   );
 }

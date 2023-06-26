@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
 import CtaButton from "./components/cta-button";
+import Nav from "./components/nav";
 
 import {
   ArrowRightIcon,
@@ -169,6 +170,10 @@ export default function Home() {
         <title>Elda Bio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <header>
+        <Nav />
+      </header>
 
       <main>
         <Hero />
