@@ -30,6 +30,137 @@ function ProductCard({ name, heading, description, image, logo, cta }) {
   );
 }
 
+function Hero() {
+  return (
+    <section className={styles.hero}>
+      <div className={styles.heroText}>
+        <h1>Dermatology made more efficient</h1>
+        <p>
+          Elda empowers patients, general practitioners, and specialists to
+          detect and track dermatological conditions from early stages.
+        </p>
+        <CtaButton variant="purple">Start using Elda today</CtaButton>
+      </div>
+      <div>
+        <img src="/img/home.png" />
+      </div>
+    </section>
+  );
+}
+
+function Subhero() {
+  return (
+    <section className={styles.subhero}>
+      <h1>All the intuition of a human, all the objectivity of a computer.</h1>
+      <p>
+        Elda uses artificial intelligence to supercharge dermatology from any
+        platform.
+      </p>
+    </section>
+  );
+}
+
+function Products() {
+  return (
+    <section className={styles.products}>
+      <h1>Making dermatology easier, one step at a time</h1>
+      <div className={styles.productList}>
+        <ProductCard
+          name="scan"
+          heading="Detect, track, and treat skin cancer easier than ever before."
+          description="Elda Scan uses artificial intelligence to help you detect melanoma using just your phone with HIPAA compliance built in. Automatically upload results and comments to your favorite EMR software directly from the Scan app."
+          image="/svg/scan-illustration.svg"
+          logo="/svg/scan.svg"
+          cta={<CtaButton variant="purple">Start using Scan</CtaButton>}
+        />
+        <ProductCard
+          name="cosmetics"
+          heading="Take before and after photos in five minutes instead of thirty-five."
+          description="Elda Cosmetics leverages machine learning on your phone to make clinical photography simple, requiring far less time than before. Level up your workflow with integrations for all of the software you already use."
+          image="/svg/cosmetics-illustration.svg"
+          logo="/svg/cosmetics.svg"
+          cta={<CtaButton variant="orange">Download Cosmetics</CtaButton>}
+        />
+      </div>
+    </section>
+  );
+}
+
+function Advantages() {
+  return (
+    <section className={styles.advantages}>
+      <h1>With advantages for everyone</h1>
+      <div className={styles.advantagesGrid}>
+        <div>
+          <CameraIcon />
+          <span>
+            <strong>Real-time photo assistant</strong> to ensure high quality
+            photos
+          </span>
+        </div>
+        <div>
+          <ClockIcon />
+          <span>
+            <strong>See more patients</strong> and waste less time taking
+            pictures
+          </span>
+        </div>
+        <div>
+          <PuzzlePieceIcon />
+          <span>
+            <strong>Works with your EMR software</strong> out of the box for
+            ease of use
+          </span>
+        </div>
+        <div>
+          <ChartBarIcon />
+          <span>
+            <strong>Analyze treatment progress</strong> and quantify results
+            instantly, from anywhere
+          </span>
+        </div>
+        <div>
+          <SparklesIcon />
+          <span>
+            <strong>Optimized for you</strong> with statistics and measurements
+            you already use
+          </span>
+        </div>
+        <div>
+          <RectangleStackIcon />
+          <span>
+            <strong>Built on AI</strong> so that your practice works better,
+            faster
+          </span>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className={styles.footer}>
+      <h1>elda</h1>
+      <form>
+        <div className={styles.formInput}>
+          <input placeholder="join our email list today" />
+          <button>
+            <ArrowRightIcon />
+          </button>
+        </div>
+      </form>
+      <div className={styles.links}>
+        <a>about</a>
+        <a>copyright 2023 elda bio</a>
+        <a>privacy policy</a>
+        <a>contact us</a>
+        <a>work with us</a>
+      </div>
+    </footer>
+  );
+}
+
 export default function Home() {
   return (
     <>
@@ -39,114 +170,11 @@ export default function Home() {
       </Head>
 
       <main>
-        <section className={styles.hero}>
-          <div className={styles.heroText}>
-            <h1>Dermatology made more efficient</h1>
-            <p>
-              Elda empowers patients, general practitioners, and specialists to
-              detect and track dermatological conditions from early stages.
-            </p>
-            <CtaButton variant="purple">Start using Elda today</CtaButton>
-          </div>
-          <div>
-            <img src="/img/home.png" />
-          </div>
-        </section>
-        <section className={styles.subhero}>
-          <h1>
-            All the intuition of a human, all the objectivity of a computer.
-          </h1>
-          <p>
-            Elda uses artificial intelligence to supercharge dermatology from
-            any platform.
-          </p>
-        </section>
-        <section className={styles.products}>
-          <h1>Making dermatology easier, one step at a time</h1>
-          <div className={styles.productList}>
-            <ProductCard
-              name="scan"
-              heading="Detect, track, and treat skin cancer easier than ever before."
-              description="Elda Scan uses artificial intelligence to help you detect melanoma using just your phone with HIPAA compliance built in. Automatically upload results and comments to your favorite EMR software directly from the Scan app."
-              image="/svg/scan-illustration.svg"
-              logo="/svg/scan.svg"
-              cta={<CtaButton variant="purple">Start using Scan</CtaButton>}
-            />
-            <ProductCard
-              name="cosmetics"
-              heading="Take before and after photos in five minutes instead of thirty-five."
-              description="Elda Cosmetics leverages machine learning on your phone to make clinical photography simple, requiring far less time than before. Level up your workflow with integrations for all of the software you already use."
-              image="/svg/cosmetics-illustration.svg"
-              logo="/svg/cosmetics.svg"
-              cta={<CtaButton variant="orange">Download Cosmetics</CtaButton>}
-            />
-          </div>
-        </section>
-        <section className={styles.advantages}>
-          <h1>With advantages for everyone</h1>
-          <div className={styles.advantagesGrid}>
-            <div>
-              <CameraIcon />
-              <span>
-                <strong>Real-time photo assistant</strong> to ensure high
-                quality photos
-              </span>
-            </div>
-            <div>
-              <ClockIcon />
-              <span>
-                <strong>See more patients</strong> and waste less time taking
-                pictures
-              </span>
-            </div>
-            <div>
-              <PuzzlePieceIcon />
-              <span>
-                <strong>Works with your EMR software</strong> out of the box for
-                ease of use
-              </span>
-            </div>
-            <div>
-              <ChartBarIcon />
-              <span>
-                <strong>Analyze treatment progress</strong> and quantify results
-                instantly, from anywhere
-              </span>
-            </div>
-            <div>
-              <SparklesIcon />
-              <span>
-                <strong>Optimized for you</strong> with statistics and
-                measurements you already use
-              </span>
-            </div>
-            <div>
-              <RectangleStackIcon />
-              <span>
-                <strong>Built on AI</strong> so that your practice works better,
-                faster
-              </span>
-            </div>
-          </div>
-        </section>
-        <footer className={styles.footer}>
-          <h1>elda</h1>
-          <form>
-            <div className={styles.formInput}>
-              <input placeholder="join our email list today" />
-              <button>
-                <ArrowRightIcon />
-              </button>
-            </div>
-          </form>
-          <div className={styles.links}>
-            <a>about</a>
-            <a>copyright 2023 elda bio</a>
-            <a>privacy policy</a>
-            <a>contact us</a>
-            <a>work with us</a>
-          </div>
-        </footer>
+        <Hero />
+        <Subhero />
+        <Products />
+        <Advantages />
+        <Footer />
       </main>
     </>
   );
