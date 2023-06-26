@@ -1,2 +1,2 @@
 # Elda Bio Website
-This is the production version of our public site, accessible [here](https://elda.bio).
+This is the in development version of our public site now with an official homepage, accessible [here](https://elda.bio).
