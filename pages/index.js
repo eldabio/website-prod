@@ -3,6 +3,15 @@ import styles from "../styles/Home.module.css";
 
 import CtaButton from "./components/cta-button";
 
+import {
+  CameraIcon,
+  ChartBarIcon,
+  ClockIcon,
+  PuzzlePieceIcon,
+  RectangleStackIcon,
+  SparklesIcon,
+} from "@heroicons/react/24/outline";
+
 function ProductCard({ name, heading, description, image, logo, cta }) {
   return (
     <div className={styles.productCard}>
@@ -74,6 +83,50 @@ export default function Home() {
         </section>
         <section className={styles.advantages}>
           <h1>With advantages for everyone</h1>
+          <div className={styles.advantagesGrid}>
+            <div>
+              <CameraIcon />
+              <span>
+                <strong>Real-time photo assistant</strong> to ensure high
+                quality photos
+              </span>
+            </div>
+            <div>
+              <ClockIcon />
+              <span>
+                <strong>See more patients</strong> and waste less time taking
+                pictures
+              </span>
+            </div>
+            <div>
+              <PuzzlePieceIcon />
+              <span>
+                <strong>Works with your EMR software</strong> out of the box for
+                ease of use
+              </span>
+            </div>
+            <div>
+              <ChartBarIcon />
+              <span>
+                <strong>Analyze treatment progress</strong> and quantify results
+                instantly, from anywhere
+              </span>
+            </div>
+            <div>
+              <SparklesIcon />
+              <span>
+                <strong>Optimized for you</strong> with statistics and
+                measurements you already use
+              </span>
+            </div>
+            <div>
+              <RectangleStackIcon />
+              <span>
+                <strong>Built on AI</strong> so that your practice works better,
+                faster
+              </span>
+            </div>
+          </div>
         </section>
         <footer className={styles.footer}>
           elda

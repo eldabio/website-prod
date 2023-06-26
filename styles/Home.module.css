@@ -84,3 +84,36 @@
 .productCard h3 {
 	font-size: 1.5rem;
 }
+
+section.advantages {
+	text-align: center;
+	padding: 4rem 2rem;
+	background-color: #f8f8f8;
+}
+
+section.advantages h1 {
+	font-size: 2.5rem;
+}
+
+section.advantages .advantagesGrid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 5.25rem;
+	padding: 2rem 3.75rem;
+}
+
+section.advantages .advantagesGrid>div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.25rem;
+	gap: 1rem;
+}
+
+section.advantages .advantagesGrid svg {
+	width: 2rem;
+	height: 2rem;
+	stroke: #A7C0FF;
+	stroke-width: 2px;
+}
