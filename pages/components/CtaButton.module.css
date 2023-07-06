@@ -10,7 +10,14 @@ button.ctaButton {
   line-height: 1;
   gap: 0.625rem;
 
-  transition: background-color, filter 0.2s;
+  transition: background-color, filter 1s;
+}
+
+button.purple:hover {
+  opacity: 0.9;
+  background-color: #D783FF;
+  color: white;
+  transition-duration: 0.75s;
 }
 
 button.purple {

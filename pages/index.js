@@ -40,7 +40,7 @@ function Hero() {
           Elda empowers patients, general practitioners, and specialists to
           detect and track dermatological conditions from early stages.
         </p>
-        <CtaButton variant="purple">Start using Elda today</CtaButton>
+        <a href="#signup" className={styles.linkStyle}><CtaButton variant="purple" href="#signup" className={styles.newButton}>Start using Elda today</CtaButton></a>
       </div>
       <div>
         <img src="/svg/gradient-blur.svg" />
@@ -145,7 +145,7 @@ function Footer() {
     <footer className={styles.footer}>
       <h1>elda</h1>
       <form>
-        <div className={styles.formInput}>
+        <div className={styles.formInput} id="signup">
           <input placeholder="join our email list today" />
           <button>
             <ArrowRightIcon />

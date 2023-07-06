@@ -218,3 +218,13 @@ section.advantages .advantagesGrid svg {
 	opacity: 1;
 	cursor: pointer;
 }
+
+.newButton:hover {
+	background-color: black;
+	color: white;
+	opacity: 0.5;
+}
+
+.linkStyle {
+	text-decoration: none;
+  }

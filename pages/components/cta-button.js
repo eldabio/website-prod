@@ -1,7 +1,8 @@
 import styles from "./CtaButton.module.css";
 
-export default function CtaButton({ children, variant, showArrow = true }) {
+export default function CtaButton({ children, variant, href, showArrow = true }) {
   return (
+    // <a href={href} className={styles.link}>
     <button className={[styles.ctaButton, styles[variant]].join(" ")}>
       {children}
       {showArrow && (
@@ -19,5 +20,6 @@ export default function CtaButton({ children, variant, showArrow = true }) {
         </svg>
       )}
     </button>
+    // </a>
   );
 }
