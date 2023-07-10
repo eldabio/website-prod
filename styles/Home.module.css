@@ -1,7 +1,11 @@
+.body {
+	margin: 0;
+}
+
 /* HERO STYLES */
 .hero {
 	display: flex;
-	max-width: 75rem;
+	/* max-width: 75rem; */
 	margin: 6rem auto;
 	padding: 0 4rem;
 }
@@ -31,7 +35,7 @@
 
 .heroText {
 	padding: 20px;
-	max-width: 27.5rem;
+	/* max-width: 27.5rem; */
 }
 
 .heroText h1 {
@@ -228,3 +232,33 @@ section.advantages .advantagesGrid svg {
 .linkStyle {
 	text-decoration: none;
   }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 700px) {
+	.body {
+		width: 100vw !important;
+		margin: 0px;
+		/* word-break: break-word; */
+	}
+	.hero {
+		min-width: 100vw;
+		margin: 3rem auto 30vh;
+	}
+	.products .productList {
+		display: grid;
+		gap: 2.5rem;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */

@@ -165,7 +165,7 @@ function Footer() {
 
 export default function Home() {
   return (
-    <>
+    <div>
       <Head>
         <title>Elda Bio</title>
         <link rel="icon" href="/favicon.ico" />
@@ -175,13 +175,13 @@ export default function Home() {
         <Nav />
       </header>
 
-      <main>
+      <main className={styles.body} >
         <Hero />
         <Subhero />
         <Products />
         <Advantages />
         <Footer />
       </main>
-    </>
+    </div>
   );
 }
