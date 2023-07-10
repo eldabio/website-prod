@@ -1,230 +1,280 @@
 /* HERO STYLES */
 .hero {
-	display: flex;
-	max-width: 75rem;
-	margin: 6rem auto;
-	padding: 0 4rem;
+  display: flex;
+  max-width: 75rem;
+  margin: 6rem auto;
+  padding: 0 4rem;
+}
+
+.hero div {
+  position: relative;
+  height: fit-content;
+  clear: both;
+  display: grid;
 }
 
 .hero div img {
-	position: absolute;
-	-webkit-user-drag: none;
-	user-select: none;
+  grid-area: 1 / 1;
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
 .hero div img:nth-child(1) {
-	z-index: 1;
-	top: -6rem;
-	left: -7rem;
+  z-index: 1;
+  margin-top: -6rem;
+  margin-left: -7rem;
 }
 
-.hero>div>img:nth-child(2) {
-	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
-	background-color: white;
-	z-index: 2;
-}
-
-
-.hero div {
-	position: relative;
+.hero > div > img:nth-child(2) {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  background-color: white;
+  z-index: 2;
 }
 
 .heroText {
-	padding: 20px;
-	max-width: 27.5rem;
+  padding: 20px;
+  max-width: 27.5rem;
 }
 
 .heroText h1 {
-	font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .heroText p {
-	font-size: 1.125rem;
+  font-size: 1.125rem;
 }
-
-
-@media screen and (max-width: 960px) {
-	.hero {
-		flex-direction: column;
-	}
-}
-
 
 .subhero {
-	background-color: #2461FF;
-	color: #fff;
-	padding: 4rem 14rem;
-	text-align: center;
+  background-color: #2461ff;
+  color: #fff;
+  padding: 4rem 14rem;
+  text-align: center;
+  /* width: 100%; */
 }
 
 .subhero h1 {
-	font-size: 3rem;
-	font-weight: 900;
-	margin: 2rem 0;
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 2rem 0;
 }
 
 .subhero p {
-	font-size: 1.25rem;
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 960px) {
+  .hero {
+    /* flex-direction: column; */
+    display: block;
+    padding: 0 1rem;
+    margin: 2rem auto 0 auto;
+  }
+
+  .subhero {
+    padding: 4rem 1rem;
+  }
+
+  .hero div img {
+    object-fit: contain;
+    width: 90vw;
+  }
+
+  .hero div img:nth-child(1) {
+    margin-left: -3rem;
+    margin-top: -3rem;
+  }
 }
 
 .products {
-	padding: 2rem 3.75rem;
+  padding: 2rem 3.75rem;
 }
 
 .products h1 {
-	font-size: 2.5rem;
-	max-width: 43.5rem;
-	user-select: none;
+  font-size: 2.5rem;
+  max-width: 43.5rem;
+  user-select: none;
 }
 
 .products .productList {
-	display: flex;
-	gap: 2.5rem;
+  display: flex;
+  gap: 2.5rem;
+}
+
+@media screen and (max-width: 960px) {
+  .products .productList {
+    flex-direction: column;
+  }
 }
 
 .productCard {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: center;
-	background-color: #fff;
-	padding: 2rem;
-	border-radius: 1rem;
-	outline: rgba(0, 0, 0, 0.05) solid .1875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  outline: rgba(0, 0, 0, 0.05) solid 0.1875rem;
 }
 
 .productCard h2 {
-	font-size: 2rem;
-	display: flex;
-	/* justify-content: center; */
-	align-items: center;
-	gap: 1rem;
-	user-select: none;
+  font-size: 2rem;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 1rem;
+  user-select: none;
 }
 
 .productCard h3 {
-	font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .productCard img {
-	-webkit-user-drag: none;
-	user-select: none;
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
 section.advantages {
-	text-align: center;
-	padding: 4rem 2rem;
-	background-color: #f8f8f8;
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #f8f8f8;
 }
 
 section.advantages h1 {
-	font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 section.advantages .advantagesGrid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 4rem 5rem;
-	padding: 2rem 3.75rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem 5rem;
+  padding: 2rem 3.75rem;
 }
 
-section.advantages .advantagesGrid>div {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-size: 1.25rem;
-	gap: 1rem;
+section.advantages .advantagesGrid > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  gap: 1rem;
 }
 
 section.advantages .advantagesGrid svg {
-	width: 2rem;
-	height: 2rem;
-	stroke: #A7C0FF;
-	stroke-width: 2px;
+  width: 2rem;
+  height: 2rem;
+  stroke: #a7c0ff;
+  stroke-width: 2px;
+}
+
+@media screen and (max-width: 960px) {
+  section.advantages .advantagesGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem 2rem;
+  }
 }
 
 .footer {
-	margin: 1.25rem;
-	border-radius: 1.25rem;
-	background-color: #2461FF;
-	color: #fff;
-	text-align: center;
-	padding: 2rem 12rem;
+  margin: 1.25rem;
+  border-radius: 1.25rem;
+  background-color: #2461ff;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 12rem;
 }
 
 .footer h1 {
-	font-size: 4rem;
-	margin: 4rem 0 1rem 0;
+  font-size: 4rem;
+  margin: 4rem 0 1rem 0;
 }
 
 .footer .formInput {
-	padding: .5rem .75rem;
-	border-radius: .75rem;
-	border: none;
-	background-color: white;
-	width: fit-content;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	margin: auto;
-	outline: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.75rem;
+  border: none;
+  background-color: white;
+  width: fit-content;
 
-	transition: outline 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  outline: none;
+
+  transition: outline 0.2s ease-in-out;
 }
 
 .footer .formInput:focus-within {
-	outline: #c4c4c4 solid .25rem;
+  outline: #c4c4c4 solid 0.25rem;
 }
 
 .footer input:focus {
-	outline: none;
+  outline: none;
 }
 
 .footer input {
-	font-size: 1.25rem;
-	font-family: "Aeonik Pro";
-	border: none;
+  font-size: 1.25rem;
+  font-family: "Aeonik Pro";
+  border: none;
 }
 
 .footer button {
-	background: none;
-	border: none;
+  background: none;
+  border: none;
 }
 
 .footer button:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .footer button svg {
-	stroke: rgba(0, 0, 0, 0.4);
-	width: 1.5rem;
-	height: 1.5rem;
+  stroke: rgba(0, 0, 0, 0.4);
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .footer .links {
-	margin: 6rem 0 0 0;
-	display: flex;
-	justify-content: space-around;
+  margin: 6rem 0 0 0;
+  display: flex;
+  justify-content: space-around;
 }
 
 .footer .links a {
-	color: white;
-	opacity: 0.8;
-	transition: opacity 0.2s ease-in-out;
+  color: white;
+  opacity: 0.8;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .footer .links a:hover {
-	opacity: 1;
-	cursor: pointer;
+  opacity: 1;
+  cursor: pointer;
 }
 
 .newButton:hover {
-	background-color: black;
-	color: white;
-	opacity: 0.5;
+  background-color: black;
+  color: white;
+  opacity: 0.5;
 }
 
 .linkStyle {
-	text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 960px) {
+  .footer {
+    padding: 2rem 2rem;
   }
+
+  .footer .links {
+    display: flex;
+    margin-top: 3rem;
+  }
+
+  .footer input {
+    font-size: 1rem;
+    width: 80%;
+  }
+}
