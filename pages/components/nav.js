@@ -15,10 +15,10 @@ function Nav() {
         <li>
           <Link href="/about">about</Link>
         </li>
+        <li>
+          <Link href="/">connect</Link>
+        </li>
       </ul>
-      <div className={styles.navbarEnd}>
-        <Link href="/">connect</Link>
-      </div>
     </nav>
   );
 }
