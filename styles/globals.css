@@ -1,3 +1,12 @@
+
+
+@media screen and (max-width: 960px) {
+  html,
+  body {
+    min-width: 130vw !important;
+  }
+}
+
 /* Add any global styles for your Next.js app here */
 @font-face {
   font-family: 'Aeonik Pro';
