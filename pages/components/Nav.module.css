@@ -1,6 +1,6 @@
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 1.25rem;
   border-radius: 1rem;
   border: 1px solid #ccc;
@@ -38,4 +38,15 @@
 .navbarLinks li:hover {
   opacity: 0.8;
   transition-duration: 0.75s;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    font-size: 0.75rem;
+  }
+
+  .navbarLinks {
+    gap: 1rem;
+    padding: 0 1rem;
+  }
 }

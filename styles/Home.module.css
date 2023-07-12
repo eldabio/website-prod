@@ -3,7 +3,7 @@
   display: flex;
   max-width: 75rem;
   margin: 6rem auto;
-  padding: 0 4rem;
+  padding: 0 3rem;
 }
 
 .hero .imageContainer {
@@ -45,6 +45,7 @@
 @media screen and (max-width: 960px) {
   .hero {
     flex-direction: column;
+    padding: 0 2rem;
   }
 
   .hero .imageContainer {
@@ -59,6 +60,20 @@
   .hero .imageContainer img:nth-child(1) {
     margin-left: -4rem;
     margin-top: -4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    margin: 1rem auto 3rem auto;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero .imageContainer img:nth-child(1) {
+    margin-left: -3rem;
+    margin-top: -3rem;
   }
 }
 
@@ -89,6 +104,12 @@
 
   .subhero p {
     font-size: 1.125rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .subhero {
+    padding: 2rem;
   }
 }
 
@@ -136,6 +157,22 @@
 }
 
 @media screen and (max-width: 960px) {
+  .products {
+    padding: 2rem;
+  }
+  .products .productList {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .products {
+    padding: 2rem 1rem;
+  }
+  .products h1 {
+    font-size: 2rem;
+  }
+
   .products .productList {
     flex-direction: column;
   }
@@ -180,13 +217,32 @@ section.advantages .advantagesGrid svg {
   }
 }
 
+@media screen and (max-width: 600px) {
+  section.advantages h1 {
+    font-size: 1.75rem;
+  }
+
+  section.advantages .advantagesGrid {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2rem 1.5rem;
+  }
+
+  section.advantages .advantagesGrid > div {
+    font-size: 1rem;
+  }
+}
+
 .footer {
   margin: 1.25rem;
   border-radius: 1.25rem;
   background-color: #2461ff;
   color: #fff;
   text-align: center;
-  padding: 2rem 12rem;
+  padding: 2rem 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .footer h1 {
@@ -242,6 +298,7 @@ section.advantages .advantagesGrid svg {
   margin: 6rem 0 0 0;
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 
 .footer .links a {
@@ -253,6 +310,40 @@ section.advantages .advantagesGrid svg {
 .footer .links a:hover {
   opacity: 1;
   cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+  .footer {
+    padding: 2rem 4rem;
+  }
+
+  .footer .links {
+    margin: 3rem 0 0 0;
+    flex-direction: column;
+    row-gap: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 4rem;
+  }
+
+  .footer .formInput {
+    padding: 0.25rem 0.5rem;
+  }
+
+  .footer input {
+    font-size: 0.875rem;
+  }
+
+  .footer .links {
+    margin: 3rem 0 1rem 0;
+    flex-direction: column;
+    row-gap: 0.5rem;
+  }
 }
 
 .newButton:hover {
