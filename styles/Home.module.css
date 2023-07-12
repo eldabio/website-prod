@@ -29,6 +29,11 @@
 	position: relative;
 }
 
+
+.hero div {
+	position: relative;
+}
+
 /* .hero div {
 	position: relative;
 } */
@@ -231,4 +236,4 @@ section.advantages .advantagesGrid svg {
 
 .linkStyle {
 	text-decoration: none;
-  }
+}
