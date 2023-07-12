@@ -39,9 +39,3 @@
   opacity: 0.8;
   transition-duration: 0.75s;
 }
-
-@media screen and (max-width: 960px) {
-  .navbarLinks {
-    gap: 1rem;
-  }
-}
