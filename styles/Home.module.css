@@ -7,7 +7,7 @@
 }
 
 .hero div img {
-	position: absolute;
+	position: relative;
 	-webkit-user-drag: none;
 	user-select: none;
 }
