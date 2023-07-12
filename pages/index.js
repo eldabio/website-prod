@@ -1,8 +1,8 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
 
-import CtaButton from "./components/cta-button";
-import Nav from "./components/nav";
+import CtaButton from './components/cta-button';
+import Nav from './components/nav';
 
 import {
   ArrowRightIcon,
@@ -12,7 +12,7 @@ import {
   PuzzlePieceIcon,
   RectangleStackIcon,
   SparklesIcon,
-} from "@heroicons/react/24/outline";
+} from '@heroicons/react/24/outline';
 
 function ProductCard({ name, heading, description, image, logo, cta }) {
   return (
@@ -40,9 +40,17 @@ function Hero() {
           Elda empowers patients, general practitioners, and specialists to
           detect and track dermatological conditions from early stages.
         </p>
-        <a href="#signup" className={styles.linkStyle}><CtaButton variant="purple" href="#signup" className={styles.newButton}>Start using Elda today</CtaButton></a>
+        <a href="#signup" className={styles.linkStyle}>
+          <CtaButton
+            variant="purple"
+            href="#signup"
+            className={styles.newButton}
+          >
+            Start using Elda today
+          </CtaButton>
+        </a>
       </div>
-      <div>
+      <div className={styles.imageContainer}>
         <img src="/svg/gradient-blur.svg" />
         <img src="/img/home.png" />
       </div>
@@ -175,7 +183,7 @@ export default function Home() {
         <Nav />
       </header>
 
-      <main className={styles.body} >
+      <main className={styles.body}>
         <Hero />
         <Subhero />
         <Products />

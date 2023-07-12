@@ -6,24 +6,24 @@
   padding: 0 4rem;
 }
 
-.hero div {
+.hero .imageContainer {
   display: grid;
 }
 
-.hero div img {
+.hero .imageContainer img {
   position: relative;
   -webkit-user-drag: none;
   user-select: none;
   grid-area: 1 / 1;
 }
 
-.hero div img:nth-child(1) {
+.hero .imageContainer img:nth-child(1) {
   z-index: 1;
   margin-top: -6rem;
   margin-left: -7rem;
 }
 
-.hero > div > img:nth-child(2) {
+.hero > .imageContainer > img:nth-child(2) {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
   background-color: white;
   z-index: 2;
@@ -46,6 +46,20 @@
   .hero {
     flex-direction: column;
   }
+
+  .hero .imageContainer {
+    margin-top: 3rem;
+  }
+
+  .hero .imageContainer img {
+    object-fit: contain;
+    width: 80vw;
+  }
+
+  .hero .imageContainer img:nth-child(1) {
+    margin-left: -4rem;
+    margin-top: -4rem;
+  }
 }
 
 .subhero {
@@ -63,6 +77,19 @@
 
 .subhero p {
   font-size: 1.25rem;
+}
+
+@media screen and (max-width: 960px) {
+  .subhero {
+    padding: 4rem;
+  }
+  .subhero h1 {
+    font-size: 2rem;
+  }
+
+  .subhero p {
+    font-size: 1.125rem;
+  }
 }
 
 .products {
@@ -94,7 +121,6 @@
 .productCard h2 {
   font-size: 2rem;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   gap: 1rem;
   user-select: none;
@@ -107,6 +133,12 @@
 .productCard img {
   -webkit-user-drag: none;
   user-select: none;
+}
+
+@media screen and (max-width: 960px) {
+  .products .productList {
+    flex-direction: column;
+  }
 }
 
 section.advantages {
@@ -140,6 +172,12 @@ section.advantages .advantagesGrid svg {
   height: 2rem;
   stroke: #a7c0ff;
   stroke-width: 2px;
+}
+
+@media screen and (max-width: 960px) {
+  section.advantages .advantagesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .footer {
