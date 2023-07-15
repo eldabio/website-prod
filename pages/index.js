@@ -149,12 +149,40 @@ function Advantages() {
 }
 
 function Footer() {
+  /**
+   * @param {FormEvent} ev
+   */
+  async function onSubmit(event) {
+    event.preventDefault();
+
+    const form = event.target;
+    const formData = new FormData(form);
+
+    const email = formData.get('email');
+
+    try {
+      // TODO: notify that joining was successful
+      await fetch('/api/join', {
+        method: 'POST',
+        body: JSON.stringify({
+          email,
+        }),
+      });
+    } catch (err) {
+      console.error(err);
+    }
+  }
+
   return (
     <footer className={styles.footer}>
       <h1>elda</h1>
-      <form>
+      <form onSubmit={onSubmit}>
         <div className={styles.formInput} id="signup">
-          <input placeholder="join our email list today" />
+          <input
+            placeholder="join our email list today"
+            type="email"
+            name="email"
+          />
           <button>
             <ArrowRightIcon />
           </button>
